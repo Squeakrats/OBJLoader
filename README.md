@@ -7,6 +7,9 @@ Provides two methods for loading .obj files into javascript. Method one is for l
 them via ajax, however this can lead to problems when the webpage is not being served from a webserver. 
 Method 2 loads a pre-parsed file (javascript) directly as a script tag. 
 
+##### JavaScript .obj File Loader #####
+[generator](http://graphics.cs.wisc.edu/Courses/559-f2015/Examples/OBJGenerator/generator.html)
+
 
 ### Usage 1 ###
 Download OBJLoader.js and include it on your page. 
@@ -35,7 +38,7 @@ OBJLoader.loadAll(["assets/Wolf.obj", "assets/Deer.obj"], function (models){
 ####Step 1####
 Generate Your .objs files. These are "javascriptified" versions of your .obj
 files that can be included directly into your webpage. 
-[Go Here] to generate them.
+[Go Here](http://graphics.cs.wisc.edu/Courses/559-f2015/Examples/OBJGenerator/generator.html) to generate them.
 
 #####Step 2####
 Include them on your page somewhere in the <head> like this 
