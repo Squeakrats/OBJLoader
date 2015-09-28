@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+	<head>
+		<script src="OBJLoader.js"></script>
+		<style>
+			html, body {
+				height: 100%;
+				background-color: rgb(20, 20, 20);
+			}
+			#wrap {
+				width: 100%
+				
+				margin: 0px auto;
+				font-family: "Ubuntu sans", Arial, sans-serif;
+				color:rgb(240, 240, 240);
+				padding: 10px;
+			}
+
+
+			.highlight {
+				color : red;
+			}
+		</style>
+
+		<script>
+
+		//http://stackoverflow.com/questions/3665115/create-a-file-in-memory-for-user-to-download-not-through-server
+		function download(filename, text) {
+		  var element = document.createElement('a');
+		  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+		  element.setAttribute('download', filename);
+		  document.body.appendChild(element)
+		  element.click()
+		  document.body.removeChild(element);
+		 // element.style.display = "block"
+		}
+
+
+			var generate = function (e) {
+				var file = e.target.files[0];
+				var reader = new FileReader();
+
+				reader.onload = function (e) {
+					try{
+						var str = e.target.result;
+						console.log(e.target)
+						var model = OBJLoader.parse(str);
+						var out = OBJLoader.createJSString(file.name, model);
+						console.log(file)
+						download(file.name + "js", out);
+
+					}
+					catch(e){
+						alert(e);
+					}
+					
+				}
+
+				reader.readAsText(file)
+
+			}
+
+
+
+
+		</script>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<p> Upload your file to automatically generate a .objjs file </p>
+			<input type="file" value="Select File" onchange="generate(event)"/>
+			<a id="download" style="display:none" > Download!</a>
+			<p> If anything breaks feel free to complain to<span class="highlight"> ysohail@wisc.edu</span> . PLEASE INCLUDE THE FILES THAT DID IT </p>
+		</div>
+	</body>
+
+</html>
