@@ -58,7 +58,7 @@ for(var i = 0;i < gWolf.faces.length;i++){
 ```
  
  ####Average Vertex Example#####
-
+```html
 var group = LoadedOBJFiles["cube.obj"].groups["cube"];
 var faces = group.faces;
 var vertices = group.vertices;
@@ -81,6 +81,7 @@ sum[0] /= c;
 sum[1] /= c;
 sum[2] /= c;
 console.log(sum)
+```
 
 
 
