@@ -43,8 +43,10 @@ Include them on your page somewhere in the <head> like this
   <script type="text/javascript" src="assets/Wolf.objjs"></script>
 }
 ```
-NOTE: Do not include OBJLoader.js (unless you really want to).
-NOTE: type is required since the file extension is not .js. 
+-- Do not include OBJLoader.js (unless you really want to).
+
+
+-- type is required since the file extension is not .js. 
 
 ####Step 3#####
 Use The Assets Immediately!
