@@ -7,6 +7,8 @@ Provides two methods for loading .obj files into javascript.
 
 
 Method 1) Ajax
+
+
 Method 2) Script Tag. 
 
 
