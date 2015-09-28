@@ -58,8 +58,32 @@ for(var i = 0;i < gWolf.faces.length;i++){
   console.log(face);//all the faces in wolf model!. 
 }
 ```
+
+####Model Format####
+
+```html
+{ 
+
+	vertices :  [ [x, y, z] ... ]//all vertices in file, 
+	normals  :  [ [x, y, z] ... ] //all normals in file 
+	texCoords:  [ [x, y, z] ... ] // all coords in file  
+	groups : { // .obj files can contain more than one model. 
+
+		groupname : {
+
+			vertices : reference to original vertices,
+			normals : reference to original normals,
+			texCoords : reference to original tex coords,
+			faces : [ [positionIndex, texCoordIndex, normalIndex] ... ] //values can be null
+
+		} ...
+
+	}
+
+}
+```
  
- ####Average Vertex Example#####
+####Average Vertex Example#####
 ```html
 var group = LoadedOBJFiles["cube.obj"].groups["cube"];
 var faces = group.faces;
