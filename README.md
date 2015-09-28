@@ -32,5 +32,55 @@ OBJLoader.loadAll(["assets/Wolf.obj", "assets/Deer.obj"], function (models){
 ```
 ### Usage 2 ###
 
+####Step 1####
+Generate Your .objs files. These are "javascriptified" versions of your .obj
+files that can be included directly into your webpage. 
+[Go Here] to generate them.
+
+#####Step 2####
+Include them on your page somewhere in the <head> like this 
+```html
+  <script type="text/javascript" src="assets/Wolf.objjs"></script>
+}
+```
+NOTE: Do not include OBJLoader.js (unless you really want to).
+NOTE: type is required since the file extension is not .js. 
+
+####Step 3#####
+Use The Assets Immediately!
+```html
+var Wolf = LoadedOBJFiles["wolf.obj"];
+var gWolf = Wolf.groups["wolf"];
+for(var i = 0;i < gWolf.faces.length;i++){
+  var face = gWolf.faces[i];
+  console.log(face);//all the faces in wolf model!. 
+}
+```
+ 
+ ####Average Vertex Example#####
+
+var group = LoadedOBJFiles["cube.obj"].groups["cube"];
+var faces = group.faces;
+var vertices = group.vertices;
+var sum = [0, 0, 0], c = 0;
+
+for(var i = 0;i<faces.length;i++){   //for each face
+    var face = faces[i];
+    for(var n = 0;n < face.length;n++){ //for each vertex
+        var indices = face[n];
+        var vertex = vertices[indices[0]] //get the vertex (indices[0] is position index)
+        for(var j = 0;j < 3;j++){//for x, y, z in that vertex
+            sum[j] += vertex[j]; //add to sum
+        }
+        c++;
+    }
+     
+}
+
+sum[0] /= c;
+sum[1] /= c;
+sum[2] /= c;
+console.log(sum)
+
 
 
