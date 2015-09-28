@@ -41,7 +41,7 @@ files that can be included directly into your webpage.
 [Go Here](http://graphics.cs.wisc.edu/Courses/559-f2015/Examples/OBJGenerator/generator.html) to generate them.
 
 #####Step 2####
-Include them on your page somewhere in the <head> like this 
+Include them on your page somewhere in the head like this 
 ```html
   <script type="text/javascript" src="assets/Wolf.objjs"></script>
 }
