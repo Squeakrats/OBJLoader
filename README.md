@@ -69,7 +69,7 @@ for(var i = 0;i < gWolf.faces.length;i++){
 
 	vertices :  [ [x, y, z] ... ]//all vertices in file, 
 	normals  :  [ [x, y, z] ... ] //all normals in file 
-	texCoords:  [ [x, y, z] ... ] // all coords in file  
+	texCoords:  [ [u, v, w] ... ] // all coords in file  
 	groups : { // .obj files can contain more than one model. 
 
 		groupname : {
