@@ -7,7 +7,7 @@ Provides two methods for loading .obj files into javascript. Method one is for l
 them via ajax, however this can lead to problems when the webpage is not being served from a webserver. 
 Method 2 loads a pre-parsed file (javascript) directly as a script tag. 
 
-##### JavaScript .obj File Loader #####
+##### Links #####
 [generator](http://graphics.cs.wisc.edu/Courses/559-f2015/Examples/OBJGenerator/generator.html)
 
 
