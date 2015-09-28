@@ -3,9 +3,15 @@ OBJLoader.js
 
 #### JavaScript .obj File Loader ####
 
-Provides two methods for loading .obj files into javascript. Method one is for loading
-them via ajax. This can however lead to problems when the webpage isn't properly being hosted.
-Method 2 loads a pre-parsed file (javascript) directly as a script tag. 
+Provides two methods for loading .obj files into javascript. 
+
+
+Method 1) Ajax
+Method 2) Script Tag. 
+
+
+Method 1 can fail when the webpage is not being hosted by a webserver. Method 2 solves this,
+but makes it unable to load models dynmaically. 
 
 ##### Links #####
 [generator](http://graphics.cs.wisc.edu/Courses/559-f2015/Examples/OBJGenerator/generator.html)
@@ -19,14 +25,14 @@ Download OBJLoader.js and include it on your page.
 ```
 
 Then to load a file. 
-```html
+```javascript
 OBJLoader.load("assets/Wolf.obj", function (wolf){
   //do things with wolf
   console.log(wolf);
 }
 ```
 or alternativly to load a batch
-```html
+```javascript
 OBJLoader.loadAll(["assets/Wolf.obj", "assets/Deer.obj"], function (models){
   //all models have loaded
   console.log(models[0])//wolf.obj
@@ -44,12 +50,11 @@ files that can be included directly into your webpage.
 Include them on your page somewhere in the head like this 
 ```html
   <script type="text/javascript" src="assets/Wolf.objjs"></script>
-}
 ```
--- Do not include OBJLoader.js (unless you really want to).
+-- *Do not include OBJLoader.js (unless you really want to).*
 
 
--- type is required since the file extension is not .js. 
+-- *Type is required since the file extension is not .js. *
 
 ####Step 3#####
 Use The Assets Immediately!
