@@ -4,7 +4,7 @@ OBJLoader.js
 #### JavaScript .obj File Loader ####
 
 Provides two methods for loading .obj files into javascript. Method one is for loading
-them via ajax, however this can lead to problems when the webpage is not being served from a webserver. 
+them via ajax. This can however lead to problems when the webpage isn't properly being hosted.
 Method 2 loads a pre-parsed file (javascript) directly as a script tag. 
 
 ##### Links #####
