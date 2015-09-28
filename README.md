@@ -12,7 +12,7 @@ Method 2 loads a pre-parsed file (javascript) directly as a script tag.
 Download OBJLoader.js and include it on your page. 
 
 ```html
-<script src="https://raw.githubusercontent.com/Squeakrats/OBJLoader/master/OBJLoader.js"></script>
+<script src="js/OBJLoader.js"></script>
 ```
 
 Then to load a file. 
