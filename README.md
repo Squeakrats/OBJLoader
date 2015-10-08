@@ -37,8 +37,8 @@ or alternativly to load a batch
 ```javascript
 OBJLoader.loadAll(["assets/Wolf.obj", "assets/Deer.obj"], function (models){
   //all models have loaded
-  console.log(models[0])//wolf.obj
-  console.log(models[1])//Deer.obj
+  console.log(models[0]);//wolf.obj
+  console.log(models[1]);//Deer.obj
 }
 ```
 ### Usage 2 ###
