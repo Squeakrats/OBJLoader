@@ -48,6 +48,8 @@ Generate Your .objs files. These are "javascriptified" versions of your .obj
 files that can be included directly into your webpage. 
 [Go Here](http://graphics.cs.wisc.edu/Courses/559-f2015/Examples/OBJGenerator/generator.html) to generate them.
 
+There are some sample ones located in assets/objjs of the repository.
+
 #####Step 2####
 Include them on your page somewhere in the head like this 
 ```html
