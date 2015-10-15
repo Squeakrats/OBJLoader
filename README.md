@@ -76,17 +76,25 @@ for(var i = 0;i < gWolf.faces.length;i++){
 ```html
 { 
 
-	vertices :  [ [x, y, z] ... ]//all vertices in file, 
-	normals  :  [ [x, y, z] ... ] //all normals in file 
-	texCoords:  [ [u, v, w] ... ] // all coords in file  
+	vertices :  [ [x, y, z] ... ],//all vertices in file, 
+	texCoords:  [ [u, v, w] ... ], // all coords in file  
+	normals  :  [ [x, y, z] ... ], //all normals in file 
+
 	groups : { // .obj files can contain more than one model. 
 
 		groupname : {
 
 			vertices : reference to original vertices,
-			normals : reference to original normals,
 			texCoords : reference to original tex coords,
-			faces : [ [ [positionIndex, texCoordIndex, normalIndex] ... ]... ] //values can be null
+			normals : reference to original normals,
+			faces : [ 
+			     [
+			       [vertexIndex, texCoordIndex, normalIndex],
+			       [vertexIndex, texCoordIndex, normalIndex],
+			       [vertexIndex, texCoordIndex, normalIndex]
+			     ],
+			     ...
+			  ]
 
 		} ...
 
