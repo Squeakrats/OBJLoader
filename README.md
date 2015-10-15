@@ -86,7 +86,7 @@ for(var i = 0;i < gWolf.faces.length;i++){
 			vertices : reference to original vertices,
 			normals : reference to original normals,
 			texCoords : reference to original tex coords,
-			faces : [ [positionIndex, texCoordIndex, normalIndex] ... ] //values can be null
+			faces : [ [ [positionIndex, texCoordIndex, normalIndex] ... ]... ] //values can be null
 
 		} ...
 
