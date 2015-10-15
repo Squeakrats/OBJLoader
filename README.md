@@ -89,9 +89,9 @@ for(var i = 0;i < gWolf.faces.length;i++){
 			normals : reference to original normals,
 			faces : [ 
 			     [
-			       [vertexIndex, texCoordIndex, normalIndex],
-			       [vertexIndex, texCoordIndex, normalIndex],
-			       [vertexIndex, texCoordIndex, normalIndex]
+			       [vertexIndex, texCoordIndex, normalIndex], //vertex 1
+			       [vertexIndex, texCoordIndex, normalIndex], //vertex 2
+			       [vertexIndex, texCoordIndex, normalIndex] //vertex 3
 			     ],
 			     ...
 			  ]
