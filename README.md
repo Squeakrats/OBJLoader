@@ -104,7 +104,7 @@ for(var i = 0;i < gWolf.faces.length;i++){
 ```
  
 ####Average Vertex Example#####
-```html
+```javascript
 var group = LoadedOBJFiles["cube.obj"].groups["cube"];
 var faces = group.faces;
 var vertices = group.vertices;
