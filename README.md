@@ -76,7 +76,7 @@ for(var i = 0;i < gWolf.faces.length;i++){
 ```html
 { 
 
-	vertices :  [ [x, y, z] ... ],//all vertices in file, 
+	vertices :  [ [x, y, z] ... ], //all vertices in file, 
 	texCoords:  [ [u, v, w] ... ], // all coords in file  
 	normals  :  [ [x, y, z] ... ], //all normals in file 
 
@@ -91,7 +91,7 @@ for(var i = 0;i < gWolf.faces.length;i++){
 			     [
 			       [vertexIndex, texCoordIndex, normalIndex], //vertex 1
 			       [vertexIndex, texCoordIndex, normalIndex], //vertex 2
-			       [vertexIndex, texCoordIndex, normalIndex] //vertex 3
+			       [vertexIndex, texCoordIndex, normalIndex]  //vertex 3
 			     ],
 			     ...
 			  ]
