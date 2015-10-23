@@ -118,7 +118,13 @@ var OBJLoader; //export variable.
 					for(var n = 0; n < face.length;n++){
 						var v = face[n];
 						for(var j = 0; j < v.length;j++){
-							v[j] = (v[j].length)? parseInt ( v[j] )-1: null;
+							var str = v[j];
+							if(str.length){
+								var value = parseInt(str);
+								v[j] = (value >= 0)? value - 1 : vertices.length + value;
+							}else{
+								v[j] = null;
+							}
 						}
 
 						for(var j = v.length; j < 3;j++){
