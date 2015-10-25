@@ -1,5 +1,8 @@
 OBJLoader.js
-========
+=======
+###Not Supported###
+
+quad faces
 
 #### JavaScript .obj File Loader ####
 
